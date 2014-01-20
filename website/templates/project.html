@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>walter wiesnekker</title>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" type="text/css" href="templates/global3.css">
+</head>
+<body id="hoofd">
+
+<div id="container">
+
+
+
+
+    <nav id="navbar">
+        <!-- navigatie div -->
+
+
+        <ul>
+            <form method="get" action="project.php">
+            <li id="menu" class="menu"><input type="submit" name="home" class="button" value="home"> </li>
+            </form>
+                <!-- START BLOCK : pMenu -->
+            <form method="get" action="project.php">
+            <li id="menu1" class="menu"><input type="checkbox" value={pId} name="nummer" checked style="display: none;">
+                <input type="submit" name="project" class="button" value={projectnaam}>
+            </li>
+            </form>
+                <!-- END BLOCK : pMenu -->
+
+        </ul>
+
+
+
+        <!-- content divs -->
+    </nav>
+    <div id="cont1">
+        <!-- START BLOCK : begin -->
+        <h3 class="wtent">projecten</h3>
+        <p>aan de rechterkant kunt u zien welke project u wilt benaderen.</p>
+        <!-- END BLOCK : begin -->
+
+    </div>
+    <!-- START BLOCK : pContent -->
+
+        <div class="content">
+
+        <h3 class="wtent2">{pNaam}</h3>
+         <p>{pBeschrijving}</p>
+        <p> <img src="img/lol.png" class="photo" alt="placeholder"></p>
+            <p>{pOnderdeel}</p>
+
+           <div class="pphoto"> <img src="img/lol.png" class="photo2" alt="placeholder">
+        </div>
+            </div>
+
+
+
+
+
+    <!-- END BLOCK : pContent -->
+</div>
+</body>
+</html>
+
+
+
+
+
